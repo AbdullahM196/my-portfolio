@@ -1,0 +1,50 @@
+#Contact {
+  margin-bottom: 20px;
+  & h1 {
+    text-align: center;
+    font-size: 54px;
+    margin: 96px 0;
+  }
+  .icon {
+    font-size: 3em;
+    color: #1b7be2;
+  }
+  .contactMeTitle {
+    font-size: 2.1em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .contactMeSubTitle {
+    font-size: 1em;
+    color: #797979;
+  }
+}
+.contactBody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 8px;
+  /* justify-items: center; */
+}
+.contactRow {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+  .contactBody {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contactMeTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+  }
+  .contactMeSubTitle {
+    font-size: 0.7em;
+    text-align: center;
+  }
+}

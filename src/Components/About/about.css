@@ -1,0 +1,50 @@
+#About {
+  & h1 {
+    text-align: center;
+    font-size: 54px;
+    margin: 70px 0 !important;
+  }
+
+  .aboutHeader {
+    font-size: 39.2px;
+    font-weight: 500;
+  }
+  .aboutText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #797979;
+  }
+  & button {
+    background-color: #1b7be2;
+    color: white;
+    font-size: 17.6px;
+    width: 184px;
+    height: 50px;
+    margin-top: 40px;
+  }
+}
+.about-Body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  align-items: center;
+}
+.about-Body > img {
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  #About {
+    .about-Body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 34px;
+    }
+  }
+  .about-Body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
