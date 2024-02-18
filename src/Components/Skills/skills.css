@@ -11,6 +11,12 @@
       font-weight: 600;
     }
   }
+  .skillsRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto auto;
+  }
   .skillsRow > * {
     width: 50%;
   }
@@ -83,11 +89,13 @@
     }
   }
 }
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   .skillsRow {
     flex-direction: column;
+    gap: 25px;
+    max-width: 654px;
   }
   .skillsRow > * {
-    width: 100%;
+    width: 100% !important;
   }
 }

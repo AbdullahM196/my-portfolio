@@ -61,7 +61,12 @@ export default function About() {
           <p className={`aboutText ${screenWidth > 576 ? "" : "text-center"}`}>
             {data.aboutME}
           </p>
-          <Button as={"a"} href={myCv} download={true} className="btn">
+          <Button
+            as={"a"}
+            href={myCv}
+            download={true}
+            className="btn downloadBtn"
+          >
             Download CV <HiOutlineDownload />
           </Button>
         </motion.div>

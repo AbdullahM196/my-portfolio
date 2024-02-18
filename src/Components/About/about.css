@@ -14,13 +14,18 @@
     font-weight: 400;
     color: #797979;
   }
-  & button {
+  .downloadBtn {
     background-color: #1b7be2;
     color: white;
     font-size: 17.6px;
     width: 184px;
     height: 50px;
-    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
   }
 }
 .about-Body {

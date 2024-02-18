@@ -46,7 +46,7 @@ export default function Skills() {
         <h2 className={`${screenWidth > 576 ? "" : "text-center"}`}>
           Skills & Tools
         </h2>
-        <Row className="row-cols-md-2 row-cols-1 w-100 mx-auto mx-md-0">
+        <div className="skillsRow">
           {" "}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -127,7 +127,7 @@ export default function Skills() {
               </Accordion.Item>
             </Accordion>
           </motion.div>
-        </Row>
+        </div>
       </motion.section>
       <section className="Education w-100">
         <motion.h2
