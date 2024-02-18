@@ -1,5 +1,4 @@
 import { useLayoutEffect, useState } from "react";
-import { Row } from "react-bootstrap";
 import "./Home.css";
 import { FaLinkedin, FaGithubSquare, FaFacebookSquare } from "react-icons/fa";
 import { BsFillSendFill } from "react-icons/bs";
@@ -18,7 +17,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <Row id="Home">
+    <div id="Home">
       <motion.div
         className="text-Col"
         initial={{ opacity: 0, x: -100, y: 0 }}
@@ -84,6 +83,6 @@ export default function Home() {
       >
         <img src="./my-photo.png" alt="myImage" />
       </motion.div>
-    </Row>
+    </div>
   );
 }
